@@ -18,7 +18,7 @@ st.header('By Josiah Hill')
 
 st.write("Predicting pitch results based on pitch speed, spin rate, and break length.")
 
-pitches = pd.read_csv(r"C:\Users\jojoh\OneDrive\Documents\School\MSDS\CMSE 830\Baseball ML App\pitchdata.csv").iloc[:,1:6].dropna(axis=0)
+pitches = pd.read_csv(r"pitchdata.csv").iloc[:,1:6].dropna(axis=0)
 
 # Feature engineer code values for testing
 pitches["code"] = pitches["code"].replace(["*B", "P", "I", "Z", "Q"], "B")
